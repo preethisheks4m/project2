@@ -14,12 +14,6 @@ export class ContactsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  home(){
-    this.router.navigate(['/home']);
-    }
   
-    terms(){
-      this.router.navigate(['/terms']);
-    }
 
 }

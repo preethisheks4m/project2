@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
-export class ProductsComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   constructor(private router:Router) { }
 
@@ -15,13 +16,11 @@ export class ProductsComponent implements OnInit {
   home(){
     this.router.navigate(['/home']);
     }
-   
-    terms(){
-      this.router.navigate(['/terms']);
-    }
     contacts(){
       this.router.navigate(['/contacts']);
     }
-
+    terms(){
+      this.router.navigate(['/terms']);
+    }
 
 }
